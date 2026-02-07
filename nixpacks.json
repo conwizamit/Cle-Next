@@ -1,0 +1,7 @@
+{
+    "phases": {
+        "build": {
+            "cmd": "rm -f tsconfig.tsbuildinfo && npm run build"
+        }
+    }
+}
