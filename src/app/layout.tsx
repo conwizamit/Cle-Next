@@ -15,8 +15,31 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Centre of Legal Excellence (CLE)",
-  description: "Legal Knowledge, Publishing, Membership & Professional Development Platform",
+  title: {
+    default: "Centre of Legal Excellence (CLE)",
+    template: "%s | CLE",
+  },
+  description: "Premier legal knowledge platform offering workshops, journals, and professional development for law students and professionals.",
+  keywords: ["Law", "Legal Education", "Workshops", "Journals", "Legal Research", "Mentorship"],
+  authors: [{ name: "CLE Team" }],
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://cle-platform.com", // Replace with actual domain
+    title: "Centre of Legal Excellence (CLE)",
+    description: "Premier legal knowledge platform offering workshops, journals, and professional development.",
+    siteName: "Centre of Legal Excellence",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Centre of Legal Excellence (CLE)",
+    description: "Premier legal knowledge platform offering workshops, journals, and professional development.",
+    creator: "@CLE_Platform", // Replace with actual handle
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
